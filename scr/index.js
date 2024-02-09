@@ -1,7 +1,6 @@
 function searchCity(city) {
-  let apiKey = "4d30ecb405c31fb3of3tda2f0301a3ab";
-  let apiUrl =
-    "https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric";
+  let apiKey = "b2a5adcct04b33178913oc335f405433";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   console.log(apiUrl);
 }
 
