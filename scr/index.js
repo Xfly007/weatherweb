@@ -22,6 +22,8 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
+searchCity("Phoenix");
+
 function formatDate(date) {
   let minutes = date.getMinutes();
   let hours = date.getHours();
