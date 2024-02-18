@@ -46,6 +46,8 @@ function refreshWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   iconElement.setAttribute("src", `${response.data.condition.icon_url}`);
   iconElement.setAttribute("alt", response.data.condition.description);
+
+  getForecast(response.data.city);
 }
 
 function searchCity(city) {
@@ -106,4 +108,3 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Phoenix");
-displayForecast();

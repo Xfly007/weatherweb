@@ -119,7 +119,8 @@ footer {
 .weather-forecast-temperature {
   padding: 0 10px;
 }
-.weather-forecast-icon {
-  font-size: large;
-  text-align: center;
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-between;
 }
